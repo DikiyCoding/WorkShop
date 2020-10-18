@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lottie_rate"
+        android:background="@drawable/shape_bg_dialog_rate"
+        android:paddingBottom="24dp">
+
+        <TextView
+            android:id="@+id/tv_rate_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="93dp"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/dialog_second_example_question"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.willy.ratingbar.ScaleRatingBar
+            android:id="@+id/rb_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_rate_question"
+            app:srb_clearRatingEnabled="false"
+            app:srb_clickable="true"
+            app:srb_scrollable="true"
+            app:srb_drawableEmpty="@drawable/ic_star_grey"
+            app:srb_drawableFilled="@drawable/ic_star_yellow"
+            app:srb_isIndicator="false"
+            app:srb_numStars="5"
+            app:srb_rating="0"
+            app:srb_starHeight="48dp"
+            app:srb_starWidth="48dp"
+            app:srb_stepSize="1" />
+
+        <!--app:srb_clearRatingEnabled="true"-->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_rate_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:includeFontPadding="false"
+            android:text="@string/dialog_second_example_btn_cancel"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            app:backgroundTint="@android:color/black"
+            app:cornerRadius="5dp"
+            app:layout_constraintEnd_toStartOf="@+id/btn_rate_ok"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rb_rate"
+            app:strokeColor="#C4C4C4"
+            app:strokeWidth="1dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_rate_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:includeFontPadding="false"
+            android:text="@string/dialog_second_example_btn_ok"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            app:backgroundTint="@android:color/white"
+            app:cornerRadius="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_rate_cancel"
+            app:layout_constraintTop_toTopOf="@+id/btn_rate_cancel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_rate"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="-100dp"
+        android:scaleType="centerInside"
+        app:lottie_autoPlay="true"
+        app:lottie_enableMergePathsForKitKatAndAbove="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/start" />
+
+</RelativeLayout>

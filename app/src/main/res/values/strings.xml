@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">WorkShop</string>
+
+    <!--Expandable-->
+    <string name="exp_header_title">Очистите корзину в магазине</string>
+    <string name="exp_header_description">Перед активацией кэшбэка обязательно очистите корзину</string>
+    <string name="exp_action_text_show">Показать всё</string>
+    <string name="exp_action_text_hide">Скрыть</string>
+    <array name="exp_layout_titles">
+        <item>Отключите блокировщики рекламы</item>
+        <item>Используйте чистый Android</item>
+        <item>Покупайте на сайтах магазинов</item>
+    </array>
+    <array name="exp_layout_descriptions">
+        <item>Если при переходе в приложение AliExpress выходит ошибка 404, необходимо выключить блокировщики рекламы, в т.ч. встроенные в антивирусы. Если вы скачали файл hosts, блокирующий рекламу, то необходимо удалить из него строки, касающиеся aliexpress.com и его поддоменов.</item>
+        <item>Мы не гарантируем стабильную работу в различных модификациях Android (MIUI, Yandex.Kit, ColorOS, CyanogenMod и т.д.) и на устройствах с правами root («рутованные»).</item>
+        <item>Мобильные приложения всех магазинов, кроме Aliexpress, не дают возможности получить кэшбэк. Чтобы совершить покупки, перейдите из приложения ePN Cashback на сайт магазина в мобильном браузере.</item>
+    </array>
+    <array name="offers_info_tabs">
+        <item>Ставки</item>
+        <item>Условия</item>
+    </array>
+    <string name="btn_buy_with_cash">Купить с кэшбэком</string>
+
+    <!--SmartLock-->
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="action_save_credential">Save\nCredential</string>
+    <string name="load_credentials">Load\nCredentials</string>
+    <string name="delete_credential">Delete\nCredential</string>
+    <string name="load_hint">Load\nHint</string>
+    <string name="label_request_id_token">Request ID Token:</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="revoke_access">Revoke Access</string>
+    <string name="sign_in_email_cta">Sign In with Email</string>
+    <string name="save">Save</string>
+    <string name="load">Load</string>
+
+    <!--Moxy-->
+    <string name="moxy_message">Well done!</string>
+
+    <!--Dialogs-->
+    <string name="dialog_btn_ok">OK</string>
+    <string name="dialog_btn_cancel">Cancel</string>
+
+    <string name="dialog_first_example_title">Dialog Example # 1</string>
+    <string name="dialog_first_example_top_text">This is first dialog example</string>
+    <string name="dialog_first_example_bottom_text">AlertDialog inside DialogFragment is used here</string>
+
+    <string name="dialog_second_example_question">Вам нравится приложение?</string>
+    <string name="dialog_second_example_btn_ok">Отправить</string>
+    <string name="dialog_second_example_btn_cancel">Позже</string>
+
+    <string name="dialog_third_example_title">Доступ к камере!</string>
+    <string name="dialog_third_example_description">Чтобы сканировать чеки, разрешите доступ к камере</string>
+    <string name="dialog_third_example_btn_hand">Ввести данные вручную</string>
+    <string name="dialog_third_example_btn_ok">Разрешить</string>
+    <string name="dialog_third_example_btn_cancel">Назад</string>
+
+    <!--SDK's-->
+    <!--Facebook-->
+    <string name="facebook_app_id">689822221821686</string>
+    <string name="facebook_login_protocol_scheme">fb689822221821686</string>
+    <string name="facebook_email">email</string>
+    <string name="facebook_email_hint">your email</string>
+    <string name="facebook_locale">locale</string>
+    <string name="facebook_locale_hint">your locale</string>
+
+    <string name="facebook_empty_slot">Empty Slot</string>
+    <string name="facebook_greeting_format">Hello, %s!</string>
+    <string name="facebook_greeting_no_user">Please select a user via the options menu</string>
+    <string name="facebook_menu_item_switch_user">Select User</string>
+    <string name="facebook_menu_item_clear_slot">Clear this slot</string>
+
+    <!--Coordinator Layout-->
+    <string name="coordinator_toolbar_title">Offers</string>
+    <string name="coordinator_search_cont_desc">Clear Search</string>
+    <string name="coordinator_search_hint">""</string>
+    <string name="coordinator_content_text">This is Coordinator layout example</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="thumbnail">Thumbnail</string>
+    <string name="add_participants">Add Participants</string>
+
+    <!--Progress Bar-->
+    <string name="progress_button_text">Продолжить</string>
+    <string name="progress_edit_text_hint">Введите текст</string>
+    <string name="progress_indicator_text">1 / 3 часть</string>
+
+</resources>

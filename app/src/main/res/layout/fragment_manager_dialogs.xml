@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nex3z.flowlayout.FlowLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    app:flChildSpacing="auto"
+    app:flChildSpacingForLastRow="align"
+    app:flFlow="true"
+    app:flMaxRows="5"
+    app:flRowSpacing="8dp"
+    app:flRtl="false">
+
+    <Button
+        android:id="@+id/btn_dialog_first_example"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/btn_dialog_second_example"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/btn_dialog_third_example"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/btn_dialog_fourth_example"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/btn_dialog_fifth_example"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/btn_dialog_sixth_example"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:text="6" />
+
+</com.nex3z.flowlayout.FlowLayout>

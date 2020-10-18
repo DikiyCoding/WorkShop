@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-medium"
+        android:includeFontPadding="false"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPursesMain32"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/iv_operation"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_below="@id/tv_date"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/shape_purses_img_bg_secondary"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_purses_arrow_down" />
+
+    <TextView
+        android:id="@+id/tv_title_operation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_operation"
+        android:layout_alignBottom="@id/iv_operation"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_toEndOf="@id/iv_operation"
+        android:layout_toRightOf="@id/iv_operation"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:textColor="@color/colorPursesMain"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_value_operation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_operation"
+        android:layout_alignBottom="@id/iv_operation"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@id/tv_title_operation"
+        android:layout_toRightOf="@id/tv_title_operation"
+        android:gravity="center|end"
+        android:includeFontPadding="false"
+        android:textColor="@color/colorPursesMain"
+        android:textSize="14sp" />
+
+</RelativeLayout>

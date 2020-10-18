@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>-->
+
+    <color name="colorPrimary">#000</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#000</color>
+
+    <color name="colorText">#333333</color>
+    <color name="colorBlueMain">#6589ff</color>
+    <color name="colorTabInactive">#b5bbc2</color>
+
+    <!-- Example # 1 -->
+    <!-- Main -->
+    <color name="gradient_button_main_top">#FFC06C</color>
+    <color name="gradient_button_main_bottom">#FA46A0</color>
+
+    <!-- Permits -->
+    <color name="colorPermitsBackground">#F4F6F8</color>
+    <color name="colorPermitsTitle">#2D6190</color>
+    <color name="colorPermitsDescription">#992D6190</color>
+
+    <!-- Payment -->
+    <color name="colorPaymentBackground">#F7F7F7</color>
+    <color name="colorPaymentTextMain">#252525</color>
+    <color name="colorPaymentTextSecondary">#252525</color>
+    <color name="colorPaymentTextSecondary80">#CC252525</color>
+    <color name="colorBlack10">#1A000000</color>
+    <color name="colorBlack50">#80000000</color>
+    <color name="colorPaymentButton">#FF8A00</color>
+
+    <!-- Purse -->
+    <color name="colorPursesMain">#0D1317</color>
+    <color name="colorPursesMain32">#520D1317</color>
+    <color name="colorPursesAction">#7C5BFF</color>
+    <color name="colorPursesNavigation">#6B6B6B</color>
+    <color name="colorPursesBgMain">#E9F1F7</color>
+    <color name="colorPursesBgMain60">#99E9F1F7</color>
+    <color name="colorPursesEarnings">#3BA99C</color>
+    <color name="colorPursesStatusBar">#33000000</color>
+
+    <!-- Coordinator -->
+    <color name="colorCoordinatorSearchText">#61000000</color>
+    <color name="colorCoordinatorSearchBackground">#F5F5F5</color>
+
+    <!-- Common -->
+    <color name="paris">#F7F7F7</color>
+    <color name="minsk">#9E9E9E</color>
+    <color name="montreal">#F0F0F0</color>
+    <color name="moscow">#202020</color>
+    <color name="zurich">#FFF</color>
+    <color name="sydney">#000</color>
+    <color name="vilnius">#B5FF73</color>
+</resources>

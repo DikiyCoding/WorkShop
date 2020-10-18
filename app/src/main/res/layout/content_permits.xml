@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/list_permits"
+    style="@style/AppTheme.RecycleView"
+    android:background="@color/colorPermitsBackground"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />

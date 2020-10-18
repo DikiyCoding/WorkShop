@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nested_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:includeFontPadding="false"
+        android:text="@string/coordinator_content_text"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:id="@+id/iv_logo_offers"
+            android:layout_width="176dp"
+            android:layout_height="60dp"
+            android:src="@drawable/logo_ali" />
+
+        <ImageView
+            android:id="@+id/iv_time_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@+id/iv_logo_offers"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_confirmation_time" />
+
+        <TextView
+            android:id="@+id/tv_time_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_logo_offers"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toEndOf="@id/iv_time_icon"
+            android:layout_toRightOf="@id/iv_time_icon"
+            android:includeFontPadding="false"
+            android:text="Среднее время ожидания кэшбэка"
+            android:textColor="@color/colorText"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_time_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_time_header"
+            android:layout_alignStart="@id/tv_time_header"
+            android:layout_alignLeft="@id/tv_time_header"
+            android:includeFontPadding="false"
+            android:text="30 дней после подтверждения получения товара на AliExpress"
+            android:textColor="@color/colorText"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp" />
+
+        <TextView
+            android:id="@+id/"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_rates"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+</LinearLayout>

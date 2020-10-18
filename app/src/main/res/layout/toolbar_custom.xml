@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/appBarLayoutView"
+    android:layout_width="match_parent"
+    android:layout_height="112dp"
+    android:background="@android:color/transparent"
+    android:theme="@style/AppBarOverlay"
+    app:elevation="0dp">
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:id="@+id/collapsedToolbarView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:collapsedTitleTextAppearance="@style/CollapsedTitleState"
+        app:expandedTitleMarginEnd="16dp"
+        app:expandedTitleMarginStart="16dp"
+        app:expandedTitleTextAppearance="@style/ExpandedTitleState"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        app:title="@string/coordinator_toolbar_title">
+
+        <!--
+        android:background="@android:color/transparent"
+        app:contentScrim="@android:color/transparent"
+        -->
+
+            <!--<TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="egfdgefdgefd" />
+
+        </LinearLayout>-->
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/PopupOverlay" />
+
+        <LinearLayout
+            android:id="@+id/toolbarContainerView"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="vertical"/>
+
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+</com.google.android.material.appbar.AppBarLayout>

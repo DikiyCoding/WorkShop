@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="toolbar" type="id" />
+    <item name="tabView" type="id" />
+    <item name="appBarLayoutView" type="id" />
+    <item name="collapsedToolbarView" type="id" />
+    <item name="toolbarContainerView" type="id" />
+</resources>

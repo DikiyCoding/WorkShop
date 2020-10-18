@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dikiy.workshop">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
+        <activity android:name=".main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <data android:scheme="@string/facebook_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".code.libraries.moxy.ui.TimerActivity" />
+
+        <activity android:name=".code.classes.ActivitySpannable" />
+
+        <!--Coordinator-->
+        <activity android:name=".ui.material.coordinator.activities.simple.SimpleCoordinatorActivity" />
+        <activity android:name=".ui.material.coordinator.activities.custom.CustomCoordinatorActivity" />
+
+        <activity android:name="com.dikiy.workshop.ui.design.examples.first.ui.activities.PaymentActivity" />
+        <activity android:name="com.dikiy.workshop.ui.design.examples.first.ui.activities.PermitsActivity" />
+        <activity android:name="com.dikiy.workshop.ui.design.examples.first.ui.activities.PursesActivity" />
+
+        <activity android:name=".code.google.smartlock.experimental.ExperimentalActivity" />
+        <activity android:name=".code.google.smartlock.quickstart.QuickStartActivity" />
+        <activity android:name=".code.google.smartlock.signin.SignInActivity" />
+
+        <service
+            android:name=".code.google.smartlock.quickstart.MockServer"
+            android:enabled="true" />
+
+        <!--Facebook SDK-->
+        <activity android:name=".code.sdks.facebook.login.LoginButtonActivity" />
+        <activity android:name=".code.sdks.facebook.login.CustomButtonActivity" />
+
+        <activity android:name=".code.sdks.facebook.samples.SwitchUserActivity" />
+        <activity
+            android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/facebook_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.material.coordinator.activities.menuItem.CollapsingMenuItemActivity" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationName"
+            android:value="@string/app_name" />
+    </application>
+</manifest>

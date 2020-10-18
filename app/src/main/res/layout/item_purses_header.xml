@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="16dp"
+    android:paddingTop="40dp"
+    android:paddingEnd="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:includeFontPadding="false"
+        android:text="Доступно"
+        android:textColor="@color/colorPursesMain32"
+        android:textSize="14sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/tv_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:includeFontPadding="false"
+            android:textColor="@color/colorPursesMain"
+            android:textSize="34sp" />
+
+        <ImageButton
+            android:id="@+id/ib_info"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="end|center"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_purses_info" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:includeFontPadding="false"
+        android:text="Почему столько"
+        android:textColor="@color/colorPursesAction"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_money_pick_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/shape_purses_button_puck_up"
+        android:drawableEnd="@drawable/ic_purses_arrow_right"
+        android:drawableRight="@drawable/ic_purses_arrow_right"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="start|center"
+        android:includeFontPadding="false"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:text="Забрать деньги"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout_upcoming"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:cardBackgroundColor="@color/colorPursesBgMain60"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp"
+        app:contentPadding="16dp">
+
+        <ImageView
+            android:id="@+id/iv_upcoming"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:background="@drawable/shape_purses_img_bg_main"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/tv_title_upcoming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:fontFamily="sans-serif-medium"
+            android:includeFontPadding="false"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPursesMain32"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_value_upcoming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:fontFamily="sans-serif-medium"
+            android:includeFontPadding="false"
+            android:textColor="@color/colorPursesEarnings"
+            android:textSize="16sp" />
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

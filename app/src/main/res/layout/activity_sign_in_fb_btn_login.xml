@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/iv_facebook_avatar"
+        android:layout_width="165dp"
+        android:layout_height="165dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_facebook_login"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_facebook_email_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:includeFontPadding="false"
+        android:text="@string/facebook_email"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_facebook_email_field"
+        app:layout_constraintStart_toStartOf="@+id/tv_facebook_email_field"
+        app:layout_constraintTop_toTopOf="@+id/iv_facebook_avatar"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <TextView
+        android:id="@+id/tv_facebook_email_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:hint="@string/facebook_email_hint"
+        android:includeFontPadding="false"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_facebook_locale_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_facebook_locale_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_facebook_email_title" />
+
+    <TextView
+        android:id="@+id/tv_facebook_locale_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:includeFontPadding="false"
+        android:text="@string/facebook_locale"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_facebook_locale_field"
+        app:layout_constraintStart_toStartOf="@+id/tv_facebook_locale_field"
+        app:layout_constraintTop_toBottomOf="@+id/tv_facebook_email_field" />
+
+    <TextView
+        android:id="@+id/tv_facebook_locale_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:hint="@string/facebook_locale_hint"
+        android:includeFontPadding="false"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_facebook_login"
+        app:layout_constraintStart_toStartOf="@+id/btn_facebook_login"
+        app:layout_constraintTop_toBottomOf="@+id/tv_facebook_locale_title" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/btn_facebook_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_facebook_avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_facebook_avatar"
+        app:layout_constraintTop_toBottomOf="@+id/tv_facebook_locale_field" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

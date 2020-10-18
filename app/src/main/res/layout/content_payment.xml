@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPaymentBackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/white"
+        android:elevation="3dp"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="24dp"
+        tools:targetApi="lollipop">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_payment_cup" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:layout_toEndOf="@id/iv_image"
+            android:layout_toRightOf="@id/iv_image"
+            android:fontFamily="sans-serif-medium"
+            android:includeFontPadding="false"
+            android:text="1500 ₽"
+            android:textColor="@color/colorPaymentTextMain"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_price"
+            android:layout_alignStart="@id/tv_price"
+            android:layout_alignLeft="@id/tv_price"
+            android:layout_alignBottom="@id/iv_image"
+            android:fontFamily="sans-serif-medium"
+            android:includeFontPadding="false"
+            android:text="Кружка белая"
+            android:textColor="@color/colorPaymentTextSecondary80"
+            android:textSize="13sp" />
+
+        <ImageButton
+            android:id="@+id/ib_increase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/shape_payment_button_increase"
+            android:src="@drawable/ic_payment_increase" />
+
+        <TextView
+            android:id="@+id/tv_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ib_increase"
+            android:layout_alignBottom="@id/ib_increase"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toStartOf="@id/ib_increase"
+            android:layout_toLeftOf="@id/ib_increase"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="4"
+            android:textColor="@color/colorPaymentTextMain"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/ib_decrease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_counter"
+            android:layout_alignBottom="@id/tv_counter"
+            android:layout_toStartOf="@id/tv_counter"
+            android:layout_toLeftOf="@id/tv_counter"
+            android:background="@drawable/shape_payment_button_decrease"
+            android:src="@drawable/ic_payment_decrease" />
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/white"
+        android:elevation="3dp"
+        tools:targetApi="lollipop">
+
+        <TextView
+            android:id="@+id/tv_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:includeFontPadding="false"
+            android:text="Оплата"
+            android:textColor="@color/colorPaymentTextSecondary80"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_payment_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:includeFontPadding="false"
+            android:text="Картой **** **** **** 2140"
+            android:textColor="@color/colorBlack50"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_payment" />
+
+        <ImageButton
+            android:id="@+id/ib_payment"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@null"
+            android:src="@drawable/ic_payment_arror_right"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_payment_method"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_payment" />
+
+        <View
+            android:id="@+id/view_payment_divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorBlack10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_payment_method" />
+
+        <TextView
+            android:id="@+id/tv_delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:includeFontPadding="false"
+            android:text="Доставка"
+            android:textColor="@color/colorPaymentTextSecondary80"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_payment_divider" />
+
+        <TextView
+            android:id="@+id/tv_delivery_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:includeFontPadding="false"
+            android:text="Экспресс доставка курьером"
+            android:textColor="@color/colorBlack50"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_delivery" />
+
+        <ImageButton
+            android:id="@+id/ib_delivery"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@null"
+            android:src="@drawable/ic_payment_arror_right"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_delivery_method"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_delivery" />
+
+        <View
+            android:id="@+id/view_delivery_divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorBlack10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_delivery_method"
+            app:layout_constraintTop_toBottomOf="@+id/tv_delivery_method" />
+
+        <TextView
+            android:id="@+id/tv_title_delivery_in_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="13dp"
+            android:includeFontPadding="false"
+            android:text="Доставка по городу"
+            android:textColor="@color/colorBlack50"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_delivery_divider" />
+
+        <TextView
+            android:id="@+id/tv_title_delivery_extra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"
+            android:includeFontPadding="false"
+            android:text="Надбавка за срочность"
+            android:textColor="@color/colorBlack50"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_delivery_in_city" />
+
+        <TextView
+            android:id="@+id/tv_cost_delivery_in_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:includeFontPadding="false"
+            android:text="100 ₽"
+            android:textColor="@color/colorBlack50"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_title_delivery_in_city" />
+
+        <TextView
+            android:id="@+id/tv_cost_delivery_extra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:includeFontPadding="false"
+            android:text="500 ₽"
+            android:textColor="@color/colorBlack50"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_title_delivery_extra"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/white"
+        android:elevation="3dp"
+        android:padding="16dp"
+        android:stretchColumns="*"
+        android:layout_weight="1"
+        tools:targetApi="lollipop">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_title_counting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="Стоимость:"
+                android:textColor="@color/colorBlack50"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_value_counting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:includeFontPadding="false"
+                android:text="1 500 ₽ x 4"
+                android:textColor="@color/colorBlack50"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:id="@+id/tv_title_delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="Доставка:"
+                android:textColor="@color/colorBlack50"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_value_delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:includeFontPadding="false"
+                android:text="600 ₽"
+                android:textColor="@color/colorBlack50"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:id="@+id/tv_title_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="Скидка:"
+                android:textColor="@color/colorBlack50"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_value_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:includeFontPadding="false"
+                android:text="–"
+                android:textColor="@color/colorBlack50"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:id="@+id/tv_title_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="Итого:"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_value_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:includeFontPadding="false"
+                android:text="9 600 ₽"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_title_total_duplicate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="Итого к оплате:"
+            android:textColor="@color/colorPaymentTextSecondary80"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_value_total_duplicate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:includeFontPadding="false"
+            android:text="9 600 ₽"
+            android:textColor="@color/colorPaymentTextSecondary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_pay"
+            android:layout_width="134dp"
+            android:layout_height="36dp"
+            android:layout_gravity="end"
+            android:background="@color/colorPaymentButton"
+            android:includeFontPadding="false"
+            android:text="Оплатить"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+</LinearLayout>

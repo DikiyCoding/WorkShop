@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_item_switch_user"
+        android:icon="@drawable/img_settings"
+        android:title="@string/facebook_menu_item_switch_user"
+        app:showAsAction="always" />
+</menu>

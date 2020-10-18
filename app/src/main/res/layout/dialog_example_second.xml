@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_swipe_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/shape_dialog_camera_permission_swipe_indicator" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_swipe_indicator"
+        android:background="@drawable/shape_bg_dialog_camera_permission"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv_permission_camera_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:includeFontPadding="false"
+            android:text="@string/dialog_third_example_title"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_permission_camera_dialog_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:includeFontPadding="false"
+            android:text="@string/dialog_third_example_description"
+            android:textColor="#202020"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_permission_camera_dialog_title" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_permission_camera_dialog_by_hand"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:includeFontPadding="false"
+            android:padding="0dp"
+            android:text="@string/dialog_third_example_btn_hand"
+            android:textAllCaps="false"
+            android:textColor="#202020"
+            android:textSize="13sp"
+            app:icon="@drawable/ic_pencil"
+            app:iconTint="#202020"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_permission_camera_dialog_description" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/shape_line_dashed_grey"
+            android:layerType="software"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_permission_camera_dialog_by_hand"
+            app:layout_constraintEnd_toEndOf="@+id/btn_permission_camera_dialog_by_hand"
+            app:layout_constraintStart_toStartOf="@+id/btn_permission_camera_dialog_by_hand"
+            app:layout_constraintTop_toTopOf="@+id/btn_permission_camera_dialog_by_hand" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_permission_camera_dialog_cancel"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:includeFontPadding="false"
+            android:text="@string/dialog_third_example_btn_cancel"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            app:backgroundTint="#F7F7F7"
+            app:cornerRadius="2dp"
+            app:layout_constraintEnd_toStartOf="@+id/btn_permission_camera_dialog_ok"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_permission_camera_dialog_by_hand" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_permission_camera_dialog_ok"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:includeFontPadding="false"
+            android:text="@string/dialog_third_example_btn_ok"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            app:backgroundTint="#202020"
+            app:cornerRadius="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_permission_camera_dialog_cancel"
+            app:layout_constraintTop_toTopOf="@+id/btn_permission_camera_dialog_cancel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
