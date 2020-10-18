@@ -32,7 +32,7 @@ public class SurfaceViewFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        supportsEs2();
+//        supportsEs2();
     }
 
     @Override
@@ -40,7 +40,7 @@ public class SurfaceViewFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         glSurfaceView = view.findViewById(R.id.surface_view);
         glSurfaceView.setEGLContextClientVersion(2);
-        glSurfaceView.setRenderer(new OpenGLRenderer());
+        glSurfaceView.setRenderer(new OpenGLRenderer(requireContext()));
     }
 
     @Override
