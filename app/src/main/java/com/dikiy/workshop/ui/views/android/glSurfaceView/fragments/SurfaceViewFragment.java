@@ -65,6 +65,6 @@ public class SurfaceViewFragment extends Fragment {
     private boolean supportsEs2(Activity activity) {
         return Objects.requireNonNull((ActivityManager) activity
                 .getSystemService(Context.ACTIVITY_SERVICE))
-                .getDeviceConfigurationInfo().reqGlEsVersion >= 0x20000;
+                .getDeviceConfigurationInfo().reqGlEsVersion >= 0x00020000;
     }
 }

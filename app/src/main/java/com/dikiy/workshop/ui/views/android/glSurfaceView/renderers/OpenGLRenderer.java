@@ -32,8 +32,9 @@ import static android.opengl.GLES20.glViewport;
 public class OpenGLRenderer implements Renderer {
 
     private Context context;
-    private int programId;
     private FloatBuffer vertexData;
+
+    private int programId;
     private int uColorLocation;
     private int aPositionLocation;
 
