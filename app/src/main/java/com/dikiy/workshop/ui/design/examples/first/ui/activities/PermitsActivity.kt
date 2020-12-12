@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.text.HtmlCompat
 import com.dikiy.workshop.R
 import com.dikiy.workshop.ui.design.examples.first.ui.adapters.CategoriesAdapter
-import kotlinx.android.synthetic.main.content_permits.*
+import kotlinx.android.synthetic.main.content_activity_permits.*
 import com.dikiy.workshop.ui.design.examples.first.model.Category
 import com.dikiy.workshop.ui.design.examples.first.model.Permit
 import com.dikiy.workshop.ui.design.examples.first.ui.adapters.PermitsAdapter

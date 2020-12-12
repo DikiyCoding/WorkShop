@@ -27,10 +27,12 @@
         <activity android:name=".ui.material.coordinator.activities.simple.SimpleCoordinatorActivity" />
         <activity android:name=".ui.material.coordinator.activities.custom.CustomCoordinatorActivity" />
 
+        <!-- Design -->
         <activity android:name="com.dikiy.workshop.ui.design.examples.first.ui.activities.PaymentActivity" />
         <activity android:name="com.dikiy.workshop.ui.design.examples.first.ui.activities.PermitsActivity" />
         <activity android:name="com.dikiy.workshop.ui.design.examples.first.ui.activities.PursesActivity" />
 
+        <!-- SmartLock -->
         <activity android:name=".code.google.smartlock.experimental.ExperimentalActivity" />
         <activity android:name=".code.google.smartlock.quickstart.QuickStartActivity" />
         <activity android:name=".code.google.smartlock.signin.SignInActivity" />

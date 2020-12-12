@@ -1,4 +1,4 @@
-package com.dikiy.workshop.ui.views.custom.progressBar
+package com.dikiy.workshop.ui.views.android.horizontalProgressBar
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,7 +10,7 @@ import com.dikiy.workshop.R
 import com.dikiy.workshop.ui.views.custom.floatView.FloatViewManager
 import com.dikiy.workshop.ui.views.custom.floatView.IFloatViewManager*/
 
-class ProgressBarFragment : Fragment() {
+class HorizontalProgressBarFragment : Fragment() {
 
 //    private lateinit var mFloatView: FloatView
 //    private lateinit var mIFloatViewManager: IFloatViewManager
@@ -21,7 +21,7 @@ class ProgressBarFragment : Fragment() {
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_progress_bar, null)
+        return inflater.inflate(R.layout.fragment_horizontal_progress_bar, null)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

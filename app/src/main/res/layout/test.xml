@@ -10,6 +10,7 @@
     android:gravity="start|center"
     android:includeFontPadding="false"
     android:paddingStart="20dp"
+    android:paddingLeft="20dp"
     android:textAllCaps="false"
     android:textColor="@color/minsk"
     android:textSize="15sp"
