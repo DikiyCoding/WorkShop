@@ -3,13 +3,13 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.2"
+    compileSdkVersion 30
+    buildToolsVersion "29.0.3"
 
     defaultConfig {
         applicationId "com.dikiy.workshop"
         minSdkVersion 16
-        targetSdkVersion 29
+        targetSdkVersion 30
         multiDexEnabled true
         versionCode 1
         versionName "1.0"
@@ -34,30 +34,32 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     ext {
-        appcompatVersion = "1.1.0"
+        appcompatVersion = "1.2.0"
         cardVersion = "1.0.0"
-        constraintVersion = "2.0.0-beta4"
+        carouselPickerVersion = "v1.2"
+        constraintVersion = "2.1.0-alpha2"
         coordinatorVersion = "1.1.0"
-        espressoVersion = "3.2.0"
+        espressoVersion = "3.3.0"
+        expandableLayoutVersion = "2.9.2"
         expansionPanelVersion = "1.2.2"
-        extjunitVersion = "1.1.1"
+        extjunitVersion = "1.1.2"
         facebookVersion = "5.0.0"
         flowLayoutVersion = "1.3.0"
         googleApiClientVersion = "1.22.0"
-        junitVersion = "4.12"
-        kotlinXCoreVersion = "1.2.0"
+        junitVersion = "4.13"
+        kotlinXCoreVersion = "1.3.2"
         lottieVersion = "3.3.1"
         markwonVersion = "4.2.0"
-        materialVersion = "1.2.0-alpha06"
+        materialVersion = "1.3.0-beta01"
         moxyVersion = "2.1.2"
         multidexVersion = "1.0.3"
-        okHttpClientVersion = "4.2.2"
+        okHttpClientVersion = "4.8.1"
         picassoVersion = "2.5.2"
         recyclerVersion = "1.1.0"
         rxAndroidVersion = "2.1.1"
-        rxJavaVersion = "2.2.8"
+        rxJavaVersion = "2.2.14"
         simpleRatingBarVersion = "1.5.0"
-        smartlockVersion = "18.0.0"
+        smartlockVersion = "19.0.0"
     }
 
     //Base
@@ -66,6 +68,12 @@ dependencies {
     implementation "androidx.coordinatorlayout:coordinatorlayout:$coordinatorVersion"
     implementation "androidx.recyclerview:recyclerview:$recyclerVersion"
     implementation "androidx.cardview:cardview:$cardVersion"
+
+    //Carousel Picker
+    implementation "com.github.GoodieBag:CarouselPicker:$carouselPickerVersion"
+
+    //Expandable Layout
+    implementation "net.cachapa.expandablelayout:expandablelayout:$expandableLayoutVersion"
 
     //Expansion Panel
     implementation "com.github.florent37:expansionpanel:$expansionPanelVersion"
