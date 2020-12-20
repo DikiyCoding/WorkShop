@@ -14,9 +14,9 @@ import kotlinx.android.synthetic.main.content_activity_permits.*
 import com.dikiy.workshop.ui.design.examples.first.model.Category
 import com.dikiy.workshop.ui.design.examples.first.model.Permit
 import com.dikiy.workshop.ui.design.examples.first.ui.adapters.PermitsAdapter
-import com.dikiy.workshop.ui.design.examples.first.utils.Constants
-import com.dikiy.workshop.ui.design.examples.first.utils.StyleUtils
-import com.dikiy.workshop.ui.design.examples.first.utils.VerticalLastItemMarginDecoration
+import com.dikiy.workshop.utils.constants.Constants
+import com.dikiy.workshop.utils.style.StyleUtils
+import com.dikiy.workshop.utils.decoration.VerticalLastItemMarginDecoration
 
 class PermitsActivity : AppCompatActivity() {
 

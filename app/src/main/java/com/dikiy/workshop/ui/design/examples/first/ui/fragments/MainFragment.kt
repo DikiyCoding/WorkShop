@@ -12,8 +12,8 @@ import com.dikiy.workshop.ui.design.examples.first.ui.adapters.PursesAdapter
 import kotlinx.android.synthetic.main.fragment_purses_main.*
 import com.dikiy.workshop.ui.design.examples.first.model.Header
 import com.dikiy.workshop.ui.design.examples.first.model.Purse
-import com.dikiy.workshop.ui.design.examples.first.utils.Constants
-import com.dikiy.workshop.ui.design.examples.first.utils.VerticalLastItemMarginDecoration
+import com.dikiy.workshop.utils.constants.Constants
+import com.dikiy.workshop.utils.decoration.VerticalLastItemMarginDecoration
 
 class MainFragment : Fragment() {
 

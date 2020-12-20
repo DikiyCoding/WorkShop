@@ -1,4 +1,4 @@
-package com.dikiy.workshop.ui.design.examples.first.utils
+package com.dikiy.workshop.utils.style
 
 import android.app.Activity
 import android.os.Build

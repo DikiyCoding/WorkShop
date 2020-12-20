@@ -38,7 +38,7 @@
 
     <fragment
         android:id="@+id/container"
-        android:name="com.dikiy.workshop.ui.views.android.bottomSheet.BottomSheetFragment"
+        android:name="com.dikiy.workshop.ui.views.android.bottomSheet.fragments.BottomSheetFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

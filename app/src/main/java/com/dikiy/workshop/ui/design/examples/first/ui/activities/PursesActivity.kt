@@ -9,7 +9,7 @@ import com.dikiy.workshop.ui.design.examples.first.ui.fragments.EventsFragment
 import com.dikiy.workshop.ui.design.examples.first.ui.fragments.MainFragment
 import com.dikiy.workshop.ui.design.examples.first.ui.fragments.SettingsFragment
 import kotlinx.android.synthetic.main.activity_purses.*
-import com.dikiy.workshop.ui.design.examples.first.utils.StyleUtils
+import com.dikiy.workshop.utils.style.StyleUtils
 
 class PursesActivity : AppCompatActivity() {
 

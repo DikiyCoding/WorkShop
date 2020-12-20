@@ -9,8 +9,8 @@ import com.dikiy.workshop.R
 import kotlinx.android.synthetic.main.item_permits_header.view.*
 import kotlinx.android.synthetic.main.item_permits_main.view.*
 import com.dikiy.workshop.ui.design.examples.first.model.Permit
-import com.dikiy.workshop.ui.design.examples.first.utils.Constants
-import com.dikiy.workshop.ui.design.examples.first.utils.HorisontalFirstItemMarginDecoration
+import com.dikiy.workshop.utils.constants.Constants
+import com.dikiy.workshop.utils.decoration.HorisontalFirstItemMarginDecoration
 
 class PermitsAdapter(
         private val mCategoriesAdapter: CategoriesAdapter,

@@ -82,10 +82,6 @@
     <string name="thumbnail">Thumbnail</string>
     <string name="add_participants">Add Participants</string>
 
-    <!-- Bottom Sheet -->
-    <string name="bottom_sheet_peek">Bottom Sheet Peek</string>
-    <string name="bottom_sheet_content">Bottom Sheet Content</string>
-
     <!--Progress Bar-->
     <string name="progress_button_text">Продолжить</string>
     <string name="progress_edit_text_hint">Введите текст</string>
